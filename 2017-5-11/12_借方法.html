@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+<script type="text/javascript">
+	
+	var arr = [1,2,3,4,5];
+	
+	var obj = {name:'leo'};
+	
+	var o = true;
+	
+	//window.fn.call(document)
+	/*
+		[object Object] 
+		
+		[1,2,3,4]
+		
+		1,2,3,4
+	*/
+	
+	console.log(obj.toString.call(arr) === '[object Array]');
+	
+	console.log(arr.toString())
+	
+	
+	//alert()
+	
+	
+//	Object.prototype.toS
+
+	
+	function Fn(){
+		
+	}
+	
+	Fn.prototype = {
+		constructor:Fn,
+		say(){
+			alert(1);
+		}
+	}
+	
+	var t = new Fn();
+	t.say();
+	
+	console.dir(t)
+	
+	
+	
+</script>
+</body>
+</html>
